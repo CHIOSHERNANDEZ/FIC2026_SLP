@@ -1,0 +1,8 @@
+{
+  "name": "FIC 2026 | Festival Internacional de Cortometrajes",
+  "description": "Festival Internacional de Cortometrajes FIC 2026 - 5 al 7 de noviembre de 2026 en Campus San Luis Potosí. Cine que inspira.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

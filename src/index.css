@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #070b14;
+  --panel: rgba(15, 23, 42, 0.52);
+  --line: rgba(255, 255, 255, 0.1);
+  --text: #edf7f8;
+  --muted: #c6e7ea;
+  --teal: #48988e;
+  --aqua: #5ce1e6;
+  --purple: #7b5ea7;
+  --terra: #d97b5d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(92, 225, 230, 0.12), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(123, 94, 167, 0.2), transparent 25%),
+    linear-gradient(180deg, #060b16 0%, #0c1422 100%);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+.glass {
+  background: rgba(15, 23, 42, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.section-title {
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 0.02em;
+}
+
+.grid-hero {
+  background-image:
+    linear-gradient(135deg, rgba(72, 152, 142, 0.16), rgba(123, 94, 167, 0.12)),
+    radial-gradient(circle at center, rgba(92, 225, 230, 0.15), transparent 40%);
+}
+
+.film-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.04);
+  color: #dceef0;
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, rgba(92, 225, 230, 0.18), rgba(123, 94, 167, 0.18));
+  border-color: rgba(92, 225, 230, 0.4);
+  box-shadow: 0 0 30px rgba(92, 225, 230, 0.16);
+}
+
+.program-panel {
+  animation: fadeUp 0.35s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
